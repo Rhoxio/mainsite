@@ -1,0 +1,269 @@
+$lt-blue:#9fbfbf;
+
+$onyx: rgba(0, 0, 0, 0.8);
+$lt-onyx: rgba(0, 0, 0, 0.1);
+
+$cream:#F0F5D7;
+$dark-cream: $cream - 20;
+
+
+$transparency: rgba(0, 0, 0, 0.0);
+$eggshell: #FAF0E6;
+
+@mixin text-shadow($color: #000, $weight: 10px){
+	-moz-text-shadow: 0 0 $weight $color; 
+	-webkit-text-shadow: 0 0 $weight $color; 
+	text-shadow: 0 0 $weight $color;
+}
+
+@mixin border-radius($radius: 5px){
+	-webkit-border-radius: $radius;
+	-moz-border-raiud: $radius;
+	border-radius: $radius;
+}
+
+
+@mixin box-shadow-small(){
+	transition: box-shadow 0.5s ease;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+body {
+	background: white;
+	height: 1440px;
+}
+
+p {color: $dark-cream;}
+
+.header{
+	background-color: $transparency;
+
+	.header-wrapper{
+		background-color: $transparency;
+		float: right;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+
+	.projects{
+	}
+
+	a{
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a:hover{
+		-moz-text-shadow: 0 0 10px #ccc; 
+		-webkit-text-shadow: 0 0 10px #ccc; 
+		text-shadow: 0 0 10px #ccc;
+		opacity: 1.0;
+	}
+
+	button:hover{
+		background-color: white;
+		color: black;
+	}
+
+	div{
+		font-family: Quicksand;
+		padding: 10px;
+		display: inline-block;
+		font-size: 100%;
+		color: $cream;
+	}
+
+	button{
+		font-family: Quicksand;
+		background-color: $transparency;
+		color: white;
+		height: 50px;
+		width: 100px;
+		border: 2px solid white;
+	}
+}
+
+.main-display{
+	background: url(../images/mac_desk2.png) no-repeat center;
+	background-size: cover;
+	height: 660px;
+
+	.supertag{
+	text-align:center;
+	position: relative;
+	width: 700px;
+	margin-left: -350px;
+
+	font-family:Fjalla One;
+	font-size: 500%;
+	color: $cream;
+
+	left: 50%;
+	top:40%;
+	}
+
+	.tagline{
+		display: none;
+		// @include text-shadow(#ccc, 10px);
+		font-family: Tangerine;
+		color: $cream;
+	}
+
+	.name-desc{
+		position: relative;
+		left: 50%;
+		top: 70%;
+
+		margin-left: -250px;
+		text-align: center;
+		width: 500px;
+
+		display: none;
+		font-family: Oswald;
+		color: rgba(0, 0, 0, 0.9);
+
+
+		h4{
+			color: $cream;
+			margin:0;
+			margin-bottom: 0;
+			font-size: 150%;
+		}
+
+		h3{
+			color: $cream;
+			margin:0;
+			margin-top: 5px;
+			font-size: 150%;
+		}
+	}
+}
+
+.intro{
+	@include border-radius;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+}
+
+.main-body{
+	@extend .intro;
+}
+
+.mid-section{
+	background-color:$eggshell;
+	height: 600px;
+
+	a {
+		text-decoration: none;
+	}
+
+	.mid-wrapper{
+		background-color: $transparency;
+		height: 600px;
+
+		div{
+			font-family: helvetica;
+			display:inline-block;
+			width: 25%;
+			height: 450px;
+			background: $lt-onyx;
+		}
+
+		.project1{
+			margin-top: 5%;
+			margin-left: 5%;
+
+			p{
+				color: $onyx;
+				text-align: center;
+				margin: 10px;
+			}
+
+			.adjective{
+				width: 80%;
+				height: 60%;
+				margin-left: 10%;
+				background: url(../images/adjective_logo.png) no-repeat;
+				background-size: contain;
+			}
+		}
+
+		.project1:hover{
+			@include box-shadow-small;
+		}
+
+		.project2{
+			margin-top: 0%;
+			margin-left: 7%;
+			margin-right: 7%;
+
+			p{
+				color: $onyx;
+				text-align: center;
+				margin: 10px;
+			}
+
+			.adjective{
+				font-size: 80%;
+				width: 80%;
+				height: 60%;
+				margin-left: 10%;
+				background: url(../images/adjective_logo.png) no-repeat;
+				background-size: contain;
+			}
+		}
+
+		.project2:hover{
+			@include box-shadow-small;
+		}
+
+		.project3{
+
+			float: right;
+			margin-top: 5%;
+			margin-right: 5%;
+
+
+			p{
+				color: $onyx;
+				text-align: center;
+				margin: 10px;
+			}
+
+			.smooth-transaction{
+				position: relative;
+				left:10%;
+
+
+				width: 80%;
+				height: 50%;
+
+				background: url(../images/smooth_transaction.png) no-repeat;
+				background-size: contain;
+			}
+
+		}
+
+		.project3:hover{
+			@include box-shadow-small;
+		}
+	}
+}
+
+.footer{
+	background-color: $onyx;
+	width: 100%;
+	height: 200px;
+}
+
+
+ 
+
+
+
+
+
+
+
+

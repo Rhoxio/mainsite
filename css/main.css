@@ -1,0 +1,159 @@
+body {
+  background: white;
+  height: 1440px; }
+
+p {
+  color: #dce1c3; }
+
+.header {
+  background-color: transparent; }
+  .header .header-wrapper {
+    background-color: transparent;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px; }
+  .header a {
+    text-decoration: none;
+    opacity: 0.8; }
+  .header a:hover {
+    -moz-text-shadow: 0 0 10px #ccc;
+    -webkit-text-shadow: 0 0 10px #ccc;
+    text-shadow: 0 0 10px #ccc;
+    opacity: 1.0; }
+  .header button:hover {
+    background-color: white;
+    color: black; }
+  .header div {
+    font-family: Quicksand;
+    padding: 10px;
+    display: inline-block;
+    font-size: 100%;
+    color: #F0F5D7; }
+  .header button {
+    font-family: Quicksand;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border: 2px solid white; }
+
+.main-display {
+  background: url(../images/mac_desk2.png) no-repeat center;
+  background-size: cover;
+  height: 660px; }
+  .main-display .supertag {
+    text-align: center;
+    position: relative;
+    width: 700px;
+    margin-left: -350px;
+    font-family: Fjalla One;
+    font-size: 500%;
+    color: #F0F5D7;
+    left: 50%;
+    top: 40%; }
+  .main-display .tagline {
+    display: none;
+    font-family: Tangerine;
+    color: #F0F5D7; }
+  .main-display .name-desc {
+    position: relative;
+    left: 50%;
+    top: 70%;
+    margin-left: -250px;
+    text-align: center;
+    width: 500px;
+    display: none;
+    font-family: Oswald;
+    color: rgba(0, 0, 0, 0.9); }
+    .main-display .name-desc h4 {
+      color: #F0F5D7;
+      margin: 0;
+      margin-bottom: 0;
+      font-size: 150%; }
+    .main-display .name-desc h3 {
+      color: #F0F5D7;
+      margin: 0;
+      margin-top: 5px;
+      font-size: 150%; }
+
+.intro, .main-body {
+  -webkit-border-radius: 5px;
+  -moz-border-raiud: 5px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin-top: 10px; }
+
+.mid-section {
+  background-color: #FAF0E6;
+  height: 600px; }
+  .mid-section a {
+    text-decoration: none; }
+  .mid-section .mid-wrapper {
+    background-color: transparent;
+    height: 600px; }
+    .mid-section .mid-wrapper div {
+      font-family: helvetica;
+      display: inline-block;
+      width: 25%;
+      height: 450px;
+      background: rgba(0, 0, 0, 0.1); }
+    .mid-section .mid-wrapper .project1 {
+      margin-top: 5%;
+      margin-left: 5%; }
+      .mid-section .mid-wrapper .project1 p {
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: 10px; }
+      .mid-section .mid-wrapper .project1 .adjective {
+        width: 80%;
+        height: 60%;
+        margin-left: 10%;
+        background: url(../images/adjective_logo.png) no-repeat;
+        background-size: contain; }
+    .mid-section .mid-wrapper .project1:hover {
+      transition: box-shadow 0.5s ease;
+      box-shadow: 5px 5px 3px #888888; }
+    .mid-section .mid-wrapper .project2 {
+      margin-top: 0%;
+      margin-left: 7%;
+      margin-right: 7%; }
+      .mid-section .mid-wrapper .project2 p {
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: 10px; }
+      .mid-section .mid-wrapper .project2 .adjective {
+        font-size: 80%;
+        width: 80%;
+        height: 60%;
+        margin-left: 10%;
+        background: url(../images/adjective_logo.png) no-repeat;
+        background-size: contain; }
+    .mid-section .mid-wrapper .project2:hover {
+      transition: box-shadow 0.5s ease;
+      box-shadow: 5px 5px 3px #888888; }
+    .mid-section .mid-wrapper .project3 {
+      float: right;
+      margin-top: 5%;
+      margin-right: 5%; }
+      .mid-section .mid-wrapper .project3 p {
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin: 10px; }
+      .mid-section .mid-wrapper .project3 .smooth-transaction {
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 50%;
+        background: url(../images/smooth_transaction.png) no-repeat;
+        background-size: contain; }
+    .mid-section .mid-wrapper .project3:hover {
+      transition: box-shadow 0.5s ease;
+      box-shadow: 5px 5px 3px #888888; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 200px; }
+
+/*# sourceMappingURL=main.css.map */
