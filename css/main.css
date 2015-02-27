@@ -86,7 +86,7 @@ p {
 
 .mid-section {
   background-color: #FAF0E6;
-  height: 600px; }
+  height: 1700px; }
   .mid-section a {
     text-decoration: none; }
   .mid-section .mid-wrapper {
@@ -98,55 +98,12 @@ p {
       width: 25%;
       height: 450px;
       background: rgba(0, 0, 0, 0.1); }
-    .mid-section .mid-wrapper .project1 {
-      margin-top: 5%;
-      margin-left: 5%; }
-      .mid-section .mid-wrapper .project1 p {
-        color: rgba(0, 0, 0, 0.8);
-        text-align: center;
-        margin: 10px; }
-      .mid-section .mid-wrapper .project1 .adjective {
-        width: 80%;
-        height: 60%;
-        margin-left: 10%;
-        background: url(../images/adjective_logo.png) no-repeat;
-        background-size: contain; }
     .mid-section .mid-wrapper .project1:hover {
       transition: box-shadow 0.5s ease;
       box-shadow: 5px 5px 3px #888888; }
-    .mid-section .mid-wrapper .project2 {
-      margin-top: 0%;
-      margin-left: 7%;
-      margin-right: 7%; }
-      .mid-section .mid-wrapper .project2 p {
-        color: rgba(0, 0, 0, 0.8);
-        text-align: center;
-        margin: 10px; }
-      .mid-section .mid-wrapper .project2 .adjective {
-        font-size: 80%;
-        width: 80%;
-        height: 60%;
-        margin-left: 10%;
-        background: url(../images/adjective_logo.png) no-repeat;
-        background-size: contain; }
     .mid-section .mid-wrapper .project2:hover {
       transition: box-shadow 0.5s ease;
       box-shadow: 5px 5px 3px #888888; }
-    .mid-section .mid-wrapper .project3 {
-      float: right;
-      margin-top: 5%;
-      margin-right: 5%; }
-      .mid-section .mid-wrapper .project3 p {
-        color: rgba(0, 0, 0, 0.8);
-        text-align: center;
-        margin: 10px; }
-      .mid-section .mid-wrapper .project3 .smooth-transaction {
-        position: relative;
-        left: 10%;
-        width: 80%;
-        height: 50%;
-        background: url(../images/smooth_transaction.png) no-repeat;
-        background-size: contain; }
     .mid-section .mid-wrapper .project3:hover {
       transition: box-shadow 0.5s ease;
       box-shadow: 5px 5px 3px #888888; }

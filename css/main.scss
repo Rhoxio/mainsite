@@ -45,9 +45,6 @@ p {color: $dark-cream;}
 		margin-right: 20px;
 	}
 
-	.projects{
-	}
-
 	a{
 		text-decoration: none;
 		opacity: 0.8;
@@ -152,7 +149,7 @@ p {color: $dark-cream;}
 
 .mid-section{
 	background-color:$eggshell;
-	height: 600px;
+	height: 1700px;
 
 	a {
 		text-decoration: none;
@@ -171,22 +168,7 @@ p {color: $dark-cream;}
 		}
 
 		.project1{
-			margin-top: 5%;
-			margin-left: 5%;
 
-			p{
-				color: $onyx;
-				text-align: center;
-				margin: 10px;
-			}
-
-			.adjective{
-				width: 80%;
-				height: 60%;
-				margin-left: 10%;
-				background: url(../images/adjective_logo.png) no-repeat;
-				background-size: contain;
-			}
 		}
 
 		.project1:hover{
@@ -194,24 +176,7 @@ p {color: $dark-cream;}
 		}
 
 		.project2{
-			margin-top: 0%;
-			margin-left: 7%;
-			margin-right: 7%;
 
-			p{
-				color: $onyx;
-				text-align: center;
-				margin: 10px;
-			}
-
-			.adjective{
-				font-size: 80%;
-				width: 80%;
-				height: 60%;
-				margin-left: 10%;
-				background: url(../images/adjective_logo.png) no-repeat;
-				background-size: contain;
-			}
 		}
 
 		.project2:hover{
@@ -219,29 +184,6 @@ p {color: $dark-cream;}
 		}
 
 		.project3{
-
-			float: right;
-			margin-top: 5%;
-			margin-right: 5%;
-
-
-			p{
-				color: $onyx;
-				text-align: center;
-				margin: 10px;
-			}
-
-			.smooth-transaction{
-				position: relative;
-				left:10%;
-
-
-				width: 80%;
-				height: 50%;
-
-				background: url(../images/smooth_transaction.png) no-repeat;
-				background-size: contain;
-			}
 
 		}
 
