@@ -59,9 +59,9 @@ p {
     position: relative;
     left: 50%;
     top: 70%;
-    margin-left: -250px;
+    margin-left: -350px;
     text-align: center;
-    width: 500px;
+    width: 700px;
     display: none;
     font-family: Oswald;
     color: rgba(0, 0, 0, 0.9); }
@@ -69,44 +69,89 @@ p {
       color: #F0F5D7;
       margin: 0;
       margin-bottom: 0;
-      font-size: 150%; }
+      font-size: 200%; }
     .main-display .name-desc h3 {
       color: #F0F5D7;
       margin: 0;
       margin-top: 5px;
-      font-size: 150%; }
-
-.intro, .main-body {
-  -webkit-border-radius: 5px;
-  -moz-border-raiud: 5px;
-  border-radius: 5px;
-  background-color: #333;
-  color: white;
-  margin-top: 10px; }
+      font-size: 200%; }
 
 .mid-section {
-  background-color: #FAF0E6;
-  height: 1700px; }
-  .mid-section a {
-    text-decoration: none; }
-  .mid-section .mid-wrapper {
-    background-color: transparent;
-    height: 600px; }
-    .mid-section .mid-wrapper div {
-      font-family: helvetica;
-      display: inline-block;
-      width: 25%;
-      height: 450px;
-      background: rgba(0, 0, 0, 0.1); }
-    .mid-section .mid-wrapper .project1:hover {
-      transition: box-shadow 0.5s ease;
-      box-shadow: 5px 5px 3px #888888; }
-    .mid-section .mid-wrapper .project2:hover {
-      transition: box-shadow 0.5s ease;
-      box-shadow: 5px 5px 3px #888888; }
-    .mid-section .mid-wrapper .project3:hover {
-      transition: box-shadow 0.5s ease;
-      box-shadow: 5px 5px 3px #888888; }
+  height: 1440px; }
+  .mid-section .about-me {
+    position: absolute;
+    top: 720px;
+    left: 50%;
+    margin-left: -350px;
+    text-align: center;
+    width: 700px;
+    height: 250px; }
+    .mid-section .about-me p {
+      margin: 10px;
+      margin-top: 0px;
+      padding: 0; }
+    .mid-section .about-me button {
+      font-family: Quicksand;
+      background-color: transparent;
+      color: black;
+      height: 45px;
+      width: 100px;
+      border: 2px solid black; }
+    .mid-section .about-me button:hover {
+      background-color: black;
+      color: white; }
+    .mid-section .about-me .about-tagline {
+      color: black;
+      font-family: Fjalla One;
+      font-size: 250%;
+      margin-bottom: 30px; }
+    .mid-section .about-me .description {
+      font-family: Quicksand;
+      font-size: 110%;
+      color: gray;
+      line-height: 25px; }
+    .mid-section .about-me .youtube-button {
+      position: absolute;
+      top: 240px;
+      left: 50%;
+      margin-left: -125px; }
+    .mid-section .about-me .blog-button {
+      position: absolute;
+      top: 240px;
+      left: 50%;
+      margin-left: 25px; }
+  .mid-section .divider {
+    position: absolute;
+    z-index: 1;
+    top: 1025px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: black; }
+  .mid-section .game-engine {
+    position: absolute;
+    left: 100px;
+    top: 1100px;
+    width: 400px;
+    height: 20%;
+    border: 5px outset #333333; }
+  .mid-section .smooth-transaction {
+    position: absolute;
+    right: 100px;
+    top: 1100px;
+    width: 400px;
+    height: 20%;
+    border: 5px outset #333333; }
+  .mid-section .play-adjective {
+    position: absolute;
+    right: 50%;
+    top: 1100px;
+    margin-right: -200px;
+    width: 400px;
+    height: 20%;
+    border: 5px outset #333333; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8);

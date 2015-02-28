@@ -111,9 +111,9 @@ p {color: $dark-cream;}
 		left: 50%;
 		top: 70%;
 
-		margin-left: -250px;
+		margin-left: -350px;
 		text-align: center;
-		width: 500px;
+		width: 700px;
 
 		display: none;
 		font-family: Oswald;
@@ -124,74 +124,159 @@ p {color: $dark-cream;}
 			color: $cream;
 			margin:0;
 			margin-bottom: 0;
-			font-size: 150%;
+			font-size: 200%;
 		}
 
 		h3{
 			color: $cream;
 			margin:0;
 			margin-top: 5px;
-			font-size: 150%;
+			font-size: 200%;
 		}
 	}
 }
 
-.intro{
-	@include border-radius;
-	background-color: #333;
-	color: white;
-	margin-top: 10px;
-}
+// .intro{
+// 	@include border-radius;
+// 	background-color: #333;
+// 	color: white;
+// 	margin-top: 10px;
+// }
 
-.main-body{
-	@extend .intro;
-}
+// .main-body{
+// 	@extend .intro;
+// }
 
 .mid-section{
-	background-color:$eggshell;
-	height: 1700px;
+	height: 1440px;
 
-	a {
-		text-decoration: none;
+	.about-me{
+
+		position: absolute;
+		top: 720px;
+		left: 50%;
+		margin-left: -350px;
+
+		text-align: center;
+
+		width: 700px;
+		height: 250px;
+
+		// border: 1px solid black;
+
+		p{
+			margin: 10px;
+			margin-top:0px;
+			padding:0;
+		}
+
+		button{
+			font-family: Quicksand;
+			background-color: $transparency;
+			color: black;
+			height: 45px;
+			width: 100px;
+			border: 2px solid black;
+		}
+
+		button:hover{
+			background-color: black;
+			color: white;
+		}
+
+		.about-tagline{
+			color: black;
+			font-family: Fjalla One;
+			font-size: 250%;
+			margin-bottom: 30px;
+		}
+
+		.description{
+			font-family: Quicksand;
+			font-size: 110%;
+			color: gray;
+			line-height: 25px;
+		}
+
+		.youtube-button{
+			position: absolute;
+
+			top: 240px;
+			left: 50%;
+			margin-left: -125px;
+		}
+
+		.blog-button{
+			position: absolute;
+
+			top: 240px;
+			left: 50%;
+			margin-left: 25px;
+		}
+
 	}
 
-	.mid-wrapper{
-		background-color: $transparency;
-		height: 600px;
+	.divider{
+		position: absolute;
+		z-index: 1;
 
-		div{
-			font-family: helvetica;
-			display:inline-block;
-			width: 25%;
-			height: 450px;
-			background: $lt-onyx;
-		}
+		top: 1025px;
+		left: 50%;
+		margin-left: -350px;
 
-		.project1{
+		width: 700px;
+		height: 1px;
 
-		}
+		opacity: 0.2;
 
-		.project1:hover{
-			@include box-shadow-small;
-		}
-
-		.project2{
-
-		}
-
-		.project2:hover{
-			@include box-shadow-small;
-		}
-
-		.project3{
-
-		}
-
-		.project3:hover{
-			@include box-shadow-small;
-		}
+		background-color: black;
 	}
+
+	.game-engine{
+		position: absolute;
+
+		left: 100px;
+		top: 1100px;
+
+		width: 400px;
+		height: 20%;
+
+		border: 5px outset #333333;
+		// background-color: red;
+	}
+
+	.smooth-transaction{
+		position: absolute;
+
+		right: 100px;
+		top: 1100px;
+
+		width: 400px;
+		height: 20%;
+		
+		border: 5px outset #333333;
+		// background-color: pink;	
+	}
+
+	.play-adjective{
+		position: absolute;
+
+		right: 50%;
+		top: 1100px;
+
+		margin-right: -200px;
+
+		width: 400px;
+		height: 20%;
+
+		border: 5px outset #333333;
+		// background-color: yellow;
+	}
+
+
 }
+
+
 
 .footer{
 	background-color: $onyx;
