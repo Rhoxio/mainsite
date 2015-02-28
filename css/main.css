@@ -2,9 +2,6 @@ body {
   background: white;
   height: 1440px; }
 
-p {
-  color: #dce1c3; }
-
 .header {
   background-color: transparent; }
   .header .header-wrapper {
@@ -130,28 +127,70 @@ p {
     height: 1px;
     opacity: 0.2;
     background-color: black; }
+  .mid-section .projects {
+    position: relative;
+    top: 390px;
+    left: 50%;
+    font-family: Fjalla One;
+    font-size: 250%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px; }
   .mid-section .game-engine {
     position: absolute;
     left: 100px;
-    top: 1100px;
+    top: 1200px;
     width: 400px;
-    height: 20%;
+    height: 500px;
     border: 5px outset #333333; }
+    .mid-section .game-engine .game-engine-pic {
+      position: relative;
+      left: 50%;
+      margin-left: -125px;
+      background-image: url(../images/adjective_logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 250px;
+      width: 250px; }
+    .mid-section .game-engine .game-engine-desc {
+      font-family: Quicksand;
+      margin: 15px;
+      text-align: center; }
   .mid-section .smooth-transaction {
     position: absolute;
     right: 100px;
-    top: 1100px;
+    top: 1200px;
     width: 400px;
-    height: 20%;
+    height: 500px;
     border: 5px outset #333333; }
+    .mid-section .smooth-transaction .smooth-pic {
+      position: relative;
+      left: 50%;
+      margin-left: -175px;
+      margin-top: -10px;
+      background-image: url(../images/smooth_transaction.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 250px;
+      width: 350px; }
   .mid-section .play-adjective {
     position: absolute;
     right: 50%;
-    top: 1100px;
+    top: 1200px;
     margin-right: -200px;
     width: 400px;
-    height: 20%;
+    height: 500px;
     border: 5px outset #333333; }
+    .mid-section .play-adjective .adjective-pic {
+      position: relative;
+      left: 50%;
+      margin-left: -175px;
+      margin-top: 10px;
+      background-image: url(../images/adjectivescreen.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+      width: 350px; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
