@@ -9,6 +9,14 @@ $( document ).ready(function(){
 		$('html,body').animate({scrollTop: offset}, 1000)
 	})
 
+	$('.game-engine-overlay').hover(function(){
+		$(this).animate({'opacity':'0.5'}, 'fast')
+	})
+
+	$('.game-engine-overlay').mouseout(function(){
+		$(this).animate({'opacity':'0'}, 'fast')
+	})
+
 	var tagFadeIn = function(){
 		$('.tagline').fadeIn(2000, function(){
 			console.log("Fade done. Ready for callback.")

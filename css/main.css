@@ -140,57 +140,42 @@ body {
     position: absolute;
     left: 100px;
     top: 1200px;
-    width: 400px;
-    height: 500px;
-    border: 5px outset #333333; }
-    .mid-section .game-engine .game-engine-pic {
-      position: relative;
-      left: 50%;
-      margin-left: -125px;
-      background-image: url(../images/adjective_logo.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 250px;
-      width: 250px; }
+    width: 25%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/adjective_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%; }
     .mid-section .game-engine .game-engine-desc {
       font-family: Quicksand;
       margin: 15px;
       text-align: center; }
+    .mid-section .game-engine .game-engine-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0; }
   .mid-section .smooth-transaction {
     position: absolute;
     right: 100px;
     top: 1200px;
-    width: 400px;
-    height: 500px;
-    border: 5px outset #333333; }
-    .mid-section .smooth-transaction .smooth-pic {
-      position: relative;
-      left: 50%;
-      margin-left: -175px;
-      margin-top: -10px;
-      background-image: url(../images/smooth_transaction.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 250px;
-      width: 350px; }
+    width: 25%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/smooth.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .mid-section .play-adjective {
     position: absolute;
     right: 50%;
     top: 1200px;
-    margin-right: -200px;
-    width: 400px;
-    height: 500px;
-    border: 5px outset #333333; }
-    .mid-section .play-adjective .adjective-pic {
-      position: relative;
-      left: 50%;
-      margin-left: -175px;
-      margin-top: 10px;
-      background-image: url(../images/adjectivescreen.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 300px;
-      width: 350px; }
+    margin-right: -13%;
+    width: 26%;
+    height: 350px;
+    border: 5px outset #333333;
+    background-image: url(../images/game_display.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
