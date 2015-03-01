@@ -10,12 +10,51 @@ $( document ).ready(function(){
 	})
 
 	$('.game-engine-overlay').hover(function(){
-		$(this).animate({'opacity':'0.5'}, 'fast')
+		$(this).animate({'opacity':'0.7'}, 'fast')
 	})
 
 	$('.game-engine-overlay').mouseout(function(){
 		$(this).animate({'opacity':'0'}, 'fast')
 	})
+
+	$('.adjective-overlay').hover(function(){
+		$(this).animate({'opacity':'0.7'}, 'fast')
+	})
+
+	$('.adjective-overlay').mouseout(function(){
+		$(this).animate({'opacity':'0'}, 'fast')
+	})
+
+	$('.smooth-overlay').hover(function(){
+		$(this).animate({'opacity':'0.7'}, 'fast')
+		$('.smooth-text').animate({'opacity':'1'}, 'fast')
+	})
+
+	$('.smooth-overlay').mouseout(function(){
+		$(this).animate({'opacity':'0'}, 'fast')
+		$('.smooth-text').animate({'opacity':'0'}, 'fast')
+	})
+
+	var bindFadeEffects = function(parentElements, childElements){
+		// Binding parent elements...
+		$.each(parentElements, function(key, element){
+			$(element).hover(function(){
+				$(element).animate({'opacity':'0.7'}, 'fast')
+			})
+			$(element).mouseout(function(){
+				$(this).animate({'opacity':'0'}, 'fast')
+			})
+		})
+		// Binding child elements...
+		$.each(childElements, function(key, element){
+			$(element).hover(function(){
+				$(element).animate({'opacity':'1'}, 'fast')
+			})
+			$(element).mouseout(function(){
+				$(element).animate({'opacity':'0'}, 'fast')
+			})
+		})
+	}
 
 	var tagFadeIn = function(){
 		$('.tagline').fadeIn(2000, function(){
