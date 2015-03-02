@@ -1,6 +1,7 @@
 sayingArray = ["Experience is an apt teacher, but wisdom is the medium of creativity.",'To change the world, you need only to speak your mind.', "Existence is the process of learning, and learning is the process of living.", 'Inspiration is a product of passion; a consequence of the human spirit.']
 
 $( document ).ready(function(){
+
 	$('.tagline').html(sayingArray[Math.floor(Math.random() * sayingArray.length)])
 	
 	$('.about').on('click', function(event){
@@ -11,18 +12,22 @@ $( document ).ready(function(){
 
 	$('.game-engine-overlay').hover(function(){
 		$(this).animate({'opacity':'0.7'}, 'fast')
+		$('.game-engine-text').animate({'opacity':'1'}, 'fast')
 	})
 
 	$('.game-engine-overlay').mouseout(function(){
 		$(this).animate({'opacity':'0'}, 'fast')
+		$('.game-engine-text').animate({'opacity':'0'}, 'fast')
 	})
 
 	$('.adjective-overlay').hover(function(){
 		$(this).animate({'opacity':'0.7'}, 'fast')
+		$('.adjective-text').animate({'opacity':'1'}, 'fast')
 	})
 
 	$('.adjective-overlay').mouseout(function(){
 		$(this).animate({'opacity':'0'}, 'fast')
+		$('.adjective-text').animate({'opacity':'0'}, 'fast')
 	})
 
 	$('.smooth-overlay').hover(function(){
@@ -35,27 +40,7 @@ $( document ).ready(function(){
 		$('.smooth-text').animate({'opacity':'0'}, 'fast')
 	})
 
-	var bindFadeEffects = function(parentElements, childElements){
-		// Binding parent elements...
-		$.each(parentElements, function(key, element){
-			$(element).hover(function(){
-				$(element).animate({'opacity':'0.7'}, 'fast')
-			})
-			$(element).mouseout(function(){
-				$(this).animate({'opacity':'0'}, 'fast')
-			})
-		})
-		// Binding child elements...
-		$.each(childElements, function(key, element){
-			$(element).hover(function(){
-				$(element).animate({'opacity':'1'}, 'fast')
-			})
-			$(element).mouseout(function(){
-				$(element).animate({'opacity':'0'}, 'fast')
-			})
-		})
-	}
-
+// ------------------------
 	var tagFadeIn = function(){
 		$('.tagline').fadeIn(2000, function(){
 			console.log("Fade done. Ready for callback.")
@@ -68,6 +53,6 @@ $( document ).ready(function(){
 		})
 	}
 
-	nameFadeIn()	
+	nameFadeIn()
 })
  
