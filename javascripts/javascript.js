@@ -10,6 +10,9 @@ $( document ).ready(function(){
 		$('html,body').animate({scrollTop: offset}, 1000)
 	})
 
+// I tried looping the event delegation, but it wouldn't instatiate
+// the bindings for some reason. I will do it the un-DRY way for now until I fix it up. 
+	
 	$('.game-engine-overlay').hover(function(){
 		$(this).animate({'opacity':'0.7'}, 'fast')
 		$('.game-engine-text').animate({'opacity':'1'}, 'fast')
@@ -38,6 +41,19 @@ $( document ).ready(function(){
 	$('.smooth-overlay').mouseout(function(){
 		$(this).animate({'opacity':'0'}, 'fast')
 		$('.smooth-text').animate({'opacity':'0'}, 'fast')
+	})
+
+	$('.test').hover(function(){
+		$(this).stop().animate({backgroundColor:'yellow'}, 'fast')
+		$('.bg').css('opacity', '1')
+		$('.bg p').animate({'opacity': '1'}, 'fast')
+		$('.bg').animate({'height':'100%'}, 'fast')
+	})
+
+	$('.test').mouseleave(function(){
+		$(this).stop().animate({'backgroundColor':'green'}, 'fast')	
+		$('.bg').animate({'height':'1%'}, 'fast')
+		$('.text').animate({'opacity': '0'}, 'fast')
 	})
 
 // ------------------------

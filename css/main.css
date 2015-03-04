@@ -127,6 +127,16 @@ body {
     height: 1px;
     opacity: 0.2;
     background-color: black; }
+  .mid-section .divider2 {
+    position: absolute;
+    z-index: 1;
+    top: 1620px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 1px;
+    opacity: 0.2;
+    background-color: black; }
   .mid-section .projects {
     position: relative;
     top: 390px;
@@ -215,6 +225,44 @@ body {
       text-align: center;
       width: 100%;
       color: white; }
+  .mid-section .proficiencies {
+    position: absolute;
+    top: 1620px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    text-align: center; }
+    .mid-section .proficiencies .pro-title {
+      text-align: center;
+      font-family: Fjalla One;
+      font-size: 250%; }
+    .mid-section .proficiencies .ruby {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red; }
+    .mid-section .proficiencies .js {
+      position: absolute;
+      right: 0%;
+      width: 100px;
+      height: 100px;
+      background-color: yellow; }
+  .mid-section .test {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    pointer-events: all;
+    z-index: 999;
+    background-color: green; }
+    .mid-section .test .bg {
+      width: 100%;
+      height: 1%;
+      opacity: 0;
+      background-color: red; }
+    .mid-section .test p {
+      margin: 0;
+      border: 0;
+      opacity: 0; }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
