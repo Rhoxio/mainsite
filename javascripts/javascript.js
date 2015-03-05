@@ -1,8 +1,14 @@
 sayingArray = ["Experience is an apt teacher, but wisdom is the medium of creativity.",'To change the world, you need only to speak your mind.', "Existence is the process of learning, and learning is the process of living.", 'Inspiration is a product of passion; a consequence of the human spirit.']
+rubyProficiencies = "Ruby is my first programming love. I have experience with Rails, Sinatra, Nokogiri, ActiveRecord with SQLite/Postgresql as well as plethora of other gems and resources. I am currently building my game, Adjective, on a Rails platform, and have never been happier with the results."
+jsProficiencies = "Javascript is the langauge of the web, and no web developer would be caught dead without knowing at least a few core frameworks and libraries. I like using Coffeescript, D3, Angular, Node.js, Express, and the CreateJS suite. Smooth Transaction, my final group project at Dev Bootcamp, was built using pure Javascript with MongoDB."
+profIntro = 'I am completely open to learning any new technologies, but I am most experienced in Ruby and Javascript. Hover over the icons to see a more detailed description about my skills with each.'
+
 
 $( document ).ready(function(){
 
 	$('.tagline').html(sayingArray[Math.floor(Math.random() * sayingArray.length)])
+
+	$('.pro-display').html(profIntro)
 	
 	$('.about').on('click', function(event){
 		event.preventDefault();
@@ -10,7 +16,13 @@ $( document ).ready(function(){
 		$('html,body').animate({scrollTop: offset}, 1000)
 	})
 
-// I tried looping the event delegation, but it wouldn't instatiate
+	$('.projects-link').on('click', function(event){
+		event.preventDefault();
+		var offset = $('.projects').offset().top - 10;
+		$('html,body').animate({scrollTop: offset}, 1000)
+	})
+
+// I tried looping the event listeners, but it wouldn't instatiate
 // the bindings for some reason. I will do it the un-DRY way for now until I fix it up. 
 	
 	$('.game-engine-overlay').hover(function(){
@@ -43,18 +55,27 @@ $( document ).ready(function(){
 		$('.smooth-text').animate({'opacity':'0'}, 'fast')
 	})
 
-	$('.test').hover(function(){
-		$(this).stop().animate({backgroundColor:'yellow'}, 'fast')
-		$('.bg').css('opacity', '1')
-		$('.bg p').animate({'opacity': '1'}, 'fast')
-		$('.bg').animate({'height':'100%'}, 'fast')
+	$('.ruby').hover(function(){
+		$('.pro-display').html(rubyProficiencies)
+		$(this).css('opacity','0.9')
 	})
 
-	$('.test').mouseleave(function(){
-		$(this).stop().animate({'backgroundColor':'green'}, 'fast')	
-		$('.bg').animate({'height':'1%'}, 'fast')
-		$('.text').animate({'opacity': '0'}, 'fast')
+	$('.js').hover(function(){
+		$('.pro-display').html(jsProficiencies)
+		$(this).css('opacity','0.9')
 	})
+
+	$('.ruby').mouseleave(function(){	
+		$('.pro-display').html(profIntro)
+		$(this).css('opacity','1')
+	})
+
+	$('.js').mouseleave(function(){	
+		$('.pro-display').html(profIntro)
+		$(this).css('opacity','1')
+	})
+
+
 
 // ------------------------
 	var tagFadeIn = function(){
