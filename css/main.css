@@ -284,5 +284,41 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 200px; }
+  .footer .icons {
+    position: relative;
+    left: 50%;
+    top: 50px;
+    margin-left: -250px; }
+    .footer .icons .github-icon {
+      display: inline-block;
+      margin-right: 20px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/github2.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .youtube-icon {
+      display: inline-block;
+      margin-right: 20px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/youtube.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .gmail-icon {
+      display: inline-block;
+      margin-right: 20px;
+      width: 100px;
+      height: 100px;
+      background: url(../images/gmail.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .footer .icons .linkedin-icon {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: url(../images/linkedin.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

@@ -478,7 +478,7 @@ body {
 			border:0;
 			opacity: 0;
 		}
-		
+
 	}
 }
 
@@ -486,7 +486,71 @@ body {
 	background-color: $onyx;
 	width: 100%;
 	height: 200px;
+
+	.icons{
+		position: relative;
+
+		left: 50%;
+		top: 50px;
+
+
+		margin-left: -250px;
+
+		.github-icon{
+
+			display: inline-block;
+
+			margin-right: 20px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/github2.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.youtube-icon{
+
+			display: inline-block;
+
+			margin-right: 20px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/youtube.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.gmail-icon{
+
+			display: inline-block;
+
+			margin-right: 20px;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/gmail.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+
+		.linkedin-icon{
+
+			display: inline-block;
+
+			width: 100px;
+			height: 100px;
+			background: url(../images/linkedin.png);
+			background-repeat: no-repeat;
+			background-size: cover;			
+		}
+	}
+
 }
+
+
+
 
 
  
