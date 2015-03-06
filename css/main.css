@@ -283,38 +283,46 @@ body {
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  opacity: 0.9; }
   .footer .icons {
     position: relative;
+    width: 480px;
+    height: 130px;
     left: 50%;
-    top: 50px;
-    margin-left: -250px; }
+    top: 30px;
+    margin-left: -240px; }
     .footer .icons .github-icon {
-      display: inline-block;
-      margin-right: 20px;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
       width: 100px;
       height: 100px;
       background: url(../images/github2.png);
       background-repeat: no-repeat;
       background-size: cover; }
     .footer .icons .youtube-icon {
-      display: inline-block;
-      margin-right: 20px;
+      position: absolute;
+      bottom: 0%;
+      left: 120px;
       width: 100px;
       height: 100px;
       background: url(../images/youtube.png);
       background-repeat: no-repeat;
       background-size: cover; }
     .footer .icons .gmail-icon {
-      display: inline-block;
-      margin-right: 20px;
+      position: absolute;
+      bottom: 0%;
+      left: 240px;
       width: 100px;
       height: 100px;
       background: url(../images/gmail.png);
       background-repeat: no-repeat;
       background-size: cover; }
     .footer .icons .linkedin-icon {
-      display: inline-block;
+      position: absolute;
+      bottom: 0%;
+      left: 360px;
       width: 100px;
       height: 100px;
       background: url(../images/linkedin.png);

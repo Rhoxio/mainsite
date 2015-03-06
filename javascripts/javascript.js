@@ -75,7 +75,45 @@ $( document ).ready(function(){
 		$(this).css('opacity','1')
 	})
 
+	$('.footer').hover(function(){
+		$(this).animate({'opacity': '1'}, 'fast')
+	})
 
+	$('.footer').mouseleave(function(){
+		$(this).animate({'opacity': '0.9'}, 'fast')
+	})
+
+	$('.github-icon').hover(function(){
+		$(this).animate({'bottom':'10px'}, 150)
+	})
+
+	$('.github-icon').mouseout(function(){
+		$(this).animate({'bottom':'0px'}, 150)
+	})
+
+	$('.youtube-icon').hover(function(){
+		$(this).animate({'bottom':'10px'}, 150)
+	})
+
+	$('.youtube-icon').mouseout(function(){
+		$(this).animate({'bottom':'0px'}, 150)
+	})
+
+	$('.gmail-icon').hover(function(){
+		$(this).animate({'bottom':'10px'}, 150)
+	})
+
+	$('.gmail-icon').mouseout(function(){
+		$(this).animate({'bottom':'0px'}, 150)
+	})
+
+	$('.linkedin-icon').hover(function(){
+		$(this).animate({'bottom':'10px', 'top':'10px'}, 150)
+	})
+
+	$('.linkedin-icon').mouseout(function(){
+		$(this).animate({'bottom':'0px'}, 150)
+	})
 
 // ------------------------
 	var tagFadeIn = function(){

@@ -487,20 +487,24 @@ body {
 	width: 100%;
 	height: 200px;
 
+	opacity: 0.9;
+
 	.icons{
 		position: relative;
 
+		width: 480px;
+		height: 130px;
+
 		left: 50%;
-		top: 50px;
+		top: 30px;
 
-
-		margin-left: -250px;
+		margin-left: -240px;
 
 		.github-icon{
+			position: absolute;
 
-			display: inline-block;
-
-			margin-right: 20px;
+			bottom:0%;
+			left: 0%;
 
 			width: 100px;
 			height: 100px;
@@ -510,10 +514,10 @@ body {
 		}
 
 		.youtube-icon{
+			position: absolute;
 
-			display: inline-block;
-
-			margin-right: 20px;
+			bottom:0%;
+			left: 120px;
 
 			width: 100px;
 			height: 100px;
@@ -523,10 +527,10 @@ body {
 		}
 
 		.gmail-icon{
+			position: absolute;
 
-			display: inline-block;
-
-			margin-right: 20px;
+			bottom:0%;
+			left: 240px;
 
 			width: 100px;
 			height: 100px;
@@ -536,8 +540,11 @@ body {
 		}
 
 		.linkedin-icon{
+			position: absolute;
 
-			display: inline-block;
+			bottom: 0%;
+			left: 360px;
+
 
 			width: 100px;
 			height: 100px;
