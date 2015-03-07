@@ -3,7 +3,6 @@ rubyProficiencies = "Ruby is my first programming love. I have experience with R
 jsProficiencies = "Javascript is the langauge of the web, and no web developer would be caught dead without knowing at least a few core frameworks and libraries. I like using Coffeescript, D3, Angular, Node.js, Express, and the CreateJS suite. Smooth Transaction, my final group project at Dev Bootcamp, was built using pure Javascript with MongoDB."
 profIntro = 'I am completely open to learning any new technologies, but I am most experienced in Ruby and Javascript. Hover over the icons to see a more detailed description about my skills with each.'
 
-
 $( document ).ready(function(){
 
 	$('.tagline').html(sayingArray[Math.floor(Math.random() * sayingArray.length)])
@@ -108,7 +107,7 @@ $( document ).ready(function(){
 	})
 
 	$('.linkedin-icon').hover(function(){
-		$(this).animate({'bottom':'10px', 'top':'10px'}, 150)
+		$(this).animate({'bottom':'10px'}, 150)
 	})
 
 	$('.linkedin-icon').mouseout(function(){
