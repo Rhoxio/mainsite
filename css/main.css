@@ -74,7 +74,7 @@ body {
       font-size: 200%; }
 
 .mid-section {
-  height: 1540px; }
+  height: 1840px; }
   .mid-section .about-me {
     position: absolute;
     top: 720px;
@@ -236,14 +236,41 @@ body {
       text-align: center;
       font-family: Fjalla One;
       font-size: 250%; }
-    .mid-section .proficiencies .pro-display {
+    .mid-section .proficiencies .text-display {
+      position: absolute;
+      top: 700px;
+      font-family: Quicksand;
+      color: gray;
+      font-size: 110%;
+      width: 700px;
+      height: 100px; }
+    .mid-section .proficiencies .icon-display {
       position: relative;
       top: 350px;
       font-family: Quicksand;
       color: gray;
       font-size: 110%;
       width: 700px;
-      height: 100px; }
+      height: 0px; }
+      .mid-section .proficiencies .icon-display .icon1 {
+        position: absolute;
+        left: 0%;
+        height: 100%;
+        width: 200px;
+        background-color: red; }
+      .mid-section .proficiencies .icon-display .icon2 {
+        position: absolute;
+        left: 50%;
+        height: 100%;
+        width: 200px;
+        margin-left: -100px;
+        background-color: blue; }
+      .mid-section .proficiencies .icon-display .icon3 {
+        position: absolute;
+        right: 0%;
+        height: 100%;
+        width: 200px;
+        background-color: green; }
     .mid-section .proficiencies .ruby {
       position: absolute;
       border: 5px outset #333333;

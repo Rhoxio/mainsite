@@ -147,7 +147,7 @@ body {
 // }
 
 .mid-section{
-	height: 1540px;
+	height: 1840px;
 
 	.about-me{
 
@@ -410,7 +410,19 @@ body {
 			font-size: 250%;
 		}
 
-		.pro-display{
+		.text-display{
+			position: absolute;
+			top: 700px;
+
+			font-family: Quicksand;
+			color: gray;
+			font-size: 110%;
+
+			width: 700px;
+			height: 100px;
+		}
+
+		.icon-display{
 			position: relative;
 			top: 350px;
 
@@ -419,7 +431,36 @@ body {
 			font-size: 110%;
 
 			width: 700px;
-			height: 100px;
+			height: 0px;
+
+			.icon1{
+				position: absolute;
+				left: 0%;
+				height: 100%;
+				width: 200px;
+
+				background-color:red;
+			}
+
+			.icon2{
+				position: absolute;
+				left: 50%;
+				height: 100%;
+				width: 200px;
+
+				margin-left: -100px;
+
+				background-color:blue;
+			}
+
+			.icon3{
+				position: absolute;
+				right: 0%;
+				height: 100%;
+				width: 200px;
+
+				background-color:green;
+			}
 		}
 
 		.ruby{
@@ -545,7 +586,6 @@ body {
 			bottom: 0%;
 			left: 360px;
 
-
 			width: 100px;
 			height: 100px;
 			background: url(../images/linkedin.png);
@@ -553,7 +593,6 @@ body {
 			background-size: cover;			
 		}
 	}
-
 }
 
 
