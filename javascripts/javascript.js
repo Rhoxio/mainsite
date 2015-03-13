@@ -1,12 +1,50 @@
 sayingArray = ["Experience is an apt teacher, but wisdom is the medium of creativity.",'To change the world, you need only to speak your mind.', "Existence is the process of learning, and learning is the process of living.", 'Inspiration is a product of passion; a consequence of the human spirit.']
 rubyProficiencies = "Ruby is my first programming love. I have experience with Rails, Sinatra, Nokogiri, ActiveRecord with SQLite/Postgresql as well as plethora of other gems and resources. I am currently building my game, Adjective, on a Rails platform, and have never been happier with the results."
-jsProficiencies = "Javascript is the langauge of the web, and no web developer would be caught dead without knowing how vanilla Javascript works. This doesn't mean that I don't like using frameworks, however. I like to use D3, Angular, Node.js, Express, and the CreateJS suite for the most part. Smooth Transaction, my final group project at Dev Bootcamp, was built using Javascript with MongoDB."
+jsProficiencies = "Javascript is the langauge of the web, and no web developer would be caught dead without knowing how vanilla Javascript works. This doesn't mean that I don't like using frameworks, however. I like to use D3, Angular, Node.js, Express, the CreateJS suite, and React.js to build interactivity. Smooth Transaction, my final group project at Dev Bootcamp, was built using Javascript with MongoDB."
 profIntro = 'I am completely open to learning any new technologies, but I am most experienced in Ruby and Javascript. Hover over the icons to see a more detailed description about my skills with each.'
 
 $( document ).ready(function(){
 
+
+	// ------------------------
+	var tagFadeIn = function(){
+		$('.tagline').fadeIn(2000, function(){
+			console.log("Fade done. Ready for callback.")
+		})
+	}
+
+	var nameFadeIn = function(){
+		$('.name-desc').fadeIn(1000, function(){
+			tagFadeIn()
+		})
+	}
+
+	var setProficiencies = function(){
+			$('.text-display').html(rubyProficiencies)
+			// Switch Pictures
+			$('.icon-display').css('height', '200px')
+			CURRENT_ELEMENT = 'ruby'
+	}
+
+	var changeToRuby = function(){
+		$('.icon1').css('background', 'url(images/railsicon.png)')
+		$('.icon2').css('background', 'url(images/sinatra.png)')
+		$('.icon3').css('background', 'url(images/postgresql.png)')
+		console.log('hitting')
+	}
+
+	var changeToJs = function(){
+		$('.icon1').css('background', 'url(images/angularjsicon.png)')
+		$('.icon2').css('background', 'url(images/createjsicon.png)')
+		$('.icon3').css('background', 'url(images/react.png)')
+	}
+
+	setProficiencies()
+	changeToJs()
+	nameFadeIn()
+
 	// False is off, true is on.
-	PROF_TOGGLE = false
+	CURRENT_ELEMENT = null
 
 	$('.tagline').html(sayingArray[Math.floor(Math.random() * sayingArray.length)])
 
@@ -25,25 +63,23 @@ $( document ).ready(function(){
 	})
 
 	$('.ruby').on('click', function(){
-		if(PROF_TOGGLE === false){
-			$('.icon-display').animate({'height':'200px'}, 1000)
-			PROF_TOGGLE = true
+		if(CURRENT_ELEMENT !== 'ruby'){
+			changeToRuby()
+			$('.text-display').html(rubyProficiencies)
+			// $('.icon-display').animate({'height':'0px'}, 500)
+			// $('.icon-display').animate({'height':'200px'}, 500)
+			CURRENT_ELEMENT = 'ruby'
 		}
-		$('.text-display').html(rubyProficiencies)
 	})
 
 	$('.js').on('click', function(){
-		if(PROF_TOGGLE === false){
-			// Switch Pictures
-			$('.icon-display').animate({'height':'200px'}, 1000)
-			PROF_TOGGLE = true
-		} else if(PROF_TOGGLE){
-			$('.icon-display').animate({'height':'0px'}, 500)
-			// Switch Pictures
-			$('.icon-display').animate({'height':'200px'}, 500)
-			PROF_TOGGLE = false
+		if(CURRENT_ELEMENT !== 'js'){
+						changeToJs()
+			$('.text-display').html(jsProficiencies)
+			// $('.icon-display').animate({'height':'0px'}, 500)
+			// $('.icon-display').animate({'height':'200px'}, 500)
+			CURRENT_ELEMENT = 'js'
 		}
-		$('.text-display').html(jsProficiencies)
 	})
 
 
@@ -146,19 +182,5 @@ $( document ).ready(function(){
 		$(this).animate({'bottom':'0px'}, 150)
 	})
 
-// ------------------------
-	var tagFadeIn = function(){
-		$('.tagline').fadeIn(2000, function(){
-			console.log("Fade done. Ready for callback.")
-		})
-	}
-
-	var nameFadeIn = function(){
-		$('.name-desc').fadeIn(1000, function(){
-			tagFadeIn()
-		})
-	}
-
-	nameFadeIn()
 })
  

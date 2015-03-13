@@ -439,7 +439,11 @@ body {
 				height: 100%;
 				width: 200px;
 
-				background-color:red;
+				border: 2px solid black;
+
+				// background-image: url(../images/angularjsicon.png);
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			.icon2{
@@ -448,9 +452,13 @@ body {
 				height: 100%;
 				width: 200px;
 
+				border: 2px solid black;
+
 				margin-left: -100px;
 
-				background-color:blue;
+				// background-image: url(../images/createjsicon.png);
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			.icon3{
@@ -459,7 +467,11 @@ body {
 				height: 100%;
 				width: 200px;
 
-				background-color:green;
+				border: 2px solid black;				
+
+				// background-image: url(../images/react.png);
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 		}
 
