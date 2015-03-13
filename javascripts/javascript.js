@@ -21,7 +21,6 @@ $( document ).ready(function(){
 
 	var setProficiencies = function(){
 			$('.text-display').html(rubyProficiencies)
-			// Switch Pictures
 			$('.icon-display').css('height', '200px')
 			CURRENT_ELEMENT = 'ruby'
 	}
@@ -30,7 +29,6 @@ $( document ).ready(function(){
 		$('.icon1').css('background', 'url(images/railsicon.png)')
 		$('.icon2').css('background', 'url(images/sinatra.png)')
 		$('.icon3').css('background', 'url(images/postgresql.png)')
-		console.log('hitting')
 	}
 
 	var changeToJs = function(){
@@ -40,7 +38,7 @@ $( document ).ready(function(){
 	}
 
 	setProficiencies()
-	changeToJs()
+	changeToRuby()
 	nameFadeIn()
 
 	// False is off, true is on.
@@ -66,18 +64,14 @@ $( document ).ready(function(){
 		if(CURRENT_ELEMENT !== 'ruby'){
 			changeToRuby()
 			$('.text-display').html(rubyProficiencies)
-			// $('.icon-display').animate({'height':'0px'}, 500)
-			// $('.icon-display').animate({'height':'200px'}, 500)
 			CURRENT_ELEMENT = 'ruby'
 		}
 	})
 
 	$('.js').on('click', function(){
 		if(CURRENT_ELEMENT !== 'js'){
-						changeToJs()
+			changeToJs()
 			$('.text-display').html(jsProficiencies)
-			// $('.icon-display').animate({'height':'0px'}, 500)
-			// $('.icon-display').animate({'height':'200px'}, 500)
 			CURRENT_ELEMENT = 'js'
 		}
 	})
@@ -121,10 +115,6 @@ $( document ).ready(function(){
 		$('.pro-display').html(rubyProficiencies)
 		$(this).css('opacity','0.9')
 	})
-
-	// $('.ruby').on('click', function(){
-	// 	$('.ruby-pro-display').css('visibility':'hidden')
-	// })
 
 	$('.js').hover(function(){
 		$('.pro-display').html(jsProficiencies)
